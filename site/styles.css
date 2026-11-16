@@ -1,0 +1,11 @@
+/* Starter styles only: give each project its own typography and palette. */
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; font: 1.0625rem/1.6 Georgia, serif; }
+main, .site-credit { max-width: 40rem; margin: 0 auto; padding: 2rem 1.25rem; }
+:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+.skip { position: absolute; left: 1rem; top: -4rem; }
+.skip:focus { top: 1rem; }
+/* Andrew's mark: small, beside his credit, linking to his home page. */
+.maker-mark { display: inline-block; vertical-align: -.05em; margin-left: .2em; }
+.maker-mark img { display: block; width: .75em; height: .75em; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; animation: none !important; } }
