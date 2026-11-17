@@ -11,9 +11,10 @@ Public: https://acao-boop.github.io/REPO-NAME/ (repo acao-boop/REPO-NAME). Part 
 - Keep page links relative; the site lives under `/REPO-NAME/`. Only 404.html uses full paths.
 
 ## Review, then publish (every session)
-- Nothing goes live mid-session. Edit `site/` and commit as work lands.
-- Andrew reviews in Claude's built-in browser: run `python3 tools/preview/make_preview.py`, open the live site in the browser pane, and run `tools/preview/preview.js` there. New images appear only after publishing.
-- When Andrew approves: commit and update HANDOFF.md; Andrew pushes `main` from VS Code (Source Control > Sync). When the Actions run finishes, confirm the live files match `site/` (SHA-256), then `git tag -f published`. If the social card changed, rerun LinkedIn Post Inspector.
+- Nothing goes live mid-session. Edit `site/`.
+- Review locally: from `site/`, run `python3 -m http.server 8000` and open http://localhost:8000/. Check desktop and phone widths, keyboard-only, reduced motion and dark mode.
+- As a fallback only, run `python3 tools/preview/make_preview.py`, open the live site in the browser pane, and run `tools/preview/preview.js` there. New images appear only after publishing.
+- When Andrew approves, Claude commits, updates HANDOFF.md, and pushes `main`. When the Actions run finishes, confirm the live files match `site/` (SHA-256), then tag the deployed commit as `published` and push the tag. If the social card changed, rerun LinkedIn Post Inspector.
 
 ## Portfolio
 - Credit line: "Designed and built by Andrew Cao" (adjust to the real role), with Andrew's open A mark small beside it, linking to https://acao-boop.github.io/. Never larger, never as the project's logo.
