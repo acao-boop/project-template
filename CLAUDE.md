@@ -1,6 +1,6 @@
 # PROJECT TITLE
 
-Public: https://acao-boop.github.io/REPO-NAME/ (repo acao-boop/REPO-NAME). Part of Andrew Cao's portfolio, https://acao-boop.github.io/. Andrew's role: WRITE IT HERE.
+Public: https://acao-boop.github.io/REPO-NAME/ (repo acao-boop/REPO-NAME). Part of Andrew Cao's portfolio, https://andrewcao.org/. Andrew's role: WRITE IT HERE.
 
 ## Session routine
 - Read HANDOFF.md first. Then read only the files the task needs.
@@ -17,9 +17,9 @@ Public: https://acao-boop.github.io/REPO-NAME/ (repo acao-boop/REPO-NAME). Part 
 - When Andrew approves, Claude commits, updates HANDOFF.md, and pushes `main`. When the Actions run finishes, confirm the live files match `site/` (SHA-256), then tag the deployed commit as `published` and push the tag. If the social card changed, rerun LinkedIn Post Inspector.
 
 ## Portfolio
-- Credit line: "Designed and built by Andrew Cao" (adjust to the real role), with Andrew's open A mark small beside it, linking to https://acao-boop.github.io/. Never larger, never as the project's logo.
+- Credit line: "Designed and built by Andrew Cao" (adjust to the real role), with Andrew's open A mark small beside it, linking to https://andrewcao.org/. Never larger, never as the project's logo.
 - Give the project its own identity; don't reuse the hub's look.
-- When the project is published or changes substantially, update its entry on https://acao-boop.github.io/.
+- When the project is published or changes substantially, update its entry on the hub, https://andrewcao.org/ (code in the enoch repo, `portfolio/`).
 
 ## Constraints
 - Plain static HTML/CSS/JS only: no framework, build step, backend, login, tracking or paid service without Andrew's decision.
