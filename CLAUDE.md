@@ -21,6 +21,15 @@ Public: https://acao-boop.github.io/REPO-NAME/ (repo acao-boop/REPO-NAME). Part 
 - Give the project its own identity; don't reuse the hub's look.
 - When the project is published or changes substantially, update its entry on the hub, https://andrewcao.org/ (code in the enoch repo, `portfolio/`).
 
+## Launch checklist (before the first publish)
+- **Share card:** a 1200×627 `social-preview.jpg` that fits the project's own look, with full og: and twitter: tags on every page (each page's own title, description and URL; one shared image with a `?v=` date). The page `<title>`, og:title and twitter:title say the same thing. After publishing, check the image URL returns 200 and image/jpeg, then run LinkedIn Post Inspector.
+- **Icons:** an SVG favicon and a 180 px `apple-touch-icon.png`, linked from every page.
+- **404:** `404.html` in the site's style, with one `<h1>`. It returns status 404 and carries `noindex`.
+- **Headings:** exactly one `<h1>` per page, and the visible title must read correctly to a screen reader (no drop-cap letter split off outside the `<h1>`).
+- **Links:** run a link check over every page, including external sources. Bot-blocked sites (403/429/999) need a manual look, not a fix.
+- **Credit and hub:** the credit mark links to https://andrewcao.org/, and the project has an entry on the hub.
+- **No working files in `site/`:** everything in `site/` is public. Notes, scripts and drafts live in `docs/`.
+
 ## Constraints
 - Plain static HTML/CSS/JS only: no framework, build step, backend, login, tracking or paid service without Andrew's decision.
 - Preserve collaborators' prose, citations, sources and credits. A visual change does not authorize editorial changes.
