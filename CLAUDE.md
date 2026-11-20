@@ -28,6 +28,7 @@ Public: https://acao-boop.github.io/REPO-NAME/ (repo acao-boop/REPO-NAME). Part 
 - **Headings:** exactly one `<h1>` per page, and the visible title must read correctly to a screen reader (no drop-cap letter split off outside the `<h1>`).
 - **Links:** run a link check over every page, including external sources. Bot-blocked sites (403/429/999) need a manual look, not a fix.
 - **Credit and portfolio:** the credit mark links to https://andrewcao.org/, and the project has an entry on the portfolio.
+- **Design check:** screenshot every page at desktop and phone width and check it against the "no vibe-coded look" list in `~/Projects/CLAUDE.md` (frosted glass, pills everywhere, gradients/glows, dashboard tiles, decorative monospace, identical card grids, big radii and shadows, emoji decoration). Fix what leaked in.
 - **No working files in `site/`:** everything in `site/` is public. Notes, scripts and drafts live in `docs/`.
 
 ## Constraints
